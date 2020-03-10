@@ -13,7 +13,7 @@ import org.junit.Test;
 public class CheckWeatherDelegateTest {
 
 	@Test
-	public void test() {
+	public void verifyThatTheDelegateSetsVariable() {
 		// Set up class under test
 		CheckWeatherDelegate delegate = new CheckWeatherDelegate();
 		// Set up mock of Camunda execution environment
