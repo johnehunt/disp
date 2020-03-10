@@ -23,6 +23,7 @@ public class CheckWeatherDelegateTest {
 			delegate.execute(mockExecution);
 		} catch (Exception e) {
 			e.printStackTrace();
+			// If an exception is thrown this is a failure of the test
 			fail("throw exception: " + e.getMessage());
 		}
 		// Now verify that the mock was called.
