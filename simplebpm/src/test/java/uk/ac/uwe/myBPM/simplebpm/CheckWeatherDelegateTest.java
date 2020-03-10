@@ -18,7 +18,7 @@ public class CheckWeatherDelegateTest {
 		CheckWeatherDelegate delegate = new CheckWeatherDelegate();
 		// Set up mock of Camunda execution environment
 		DelegateExecution mockExecution = mock(DelegateExecution.class);
-		// Run the test
+		// Run the delegate behaviour
 		try {
 			delegate.execute(mockExecution);
 		} catch (Exception e) {
