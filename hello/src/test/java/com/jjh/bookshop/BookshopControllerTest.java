@@ -10,7 +10,9 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class BookshopControllerTest extends BookshopController {
+class BookshopControllerTest {
+	
+	private BookshopController controller;
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -24,6 +26,7 @@ class BookshopControllerTest extends BookshopController {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		controller = new BookshopController();
 		System.out.println("BookshopControllerTest.setUp()");
 	}
 
@@ -35,8 +38,8 @@ class BookshopControllerTest extends BookshopController {
 	@Test
 	void testNumberOfInitialBooks() {
 		System.out.println("BookshopControllerTest.test()");
-		List<Book> list = this.getAllBooks();
-		assertEquals(2, list.size(), "Initial number of books should be 2");
+		List<Book> list = this.controller.getAllBooks();
+		assertEquals(3, list.size(), "Initial number of books should be 2");
 	}
 
 }
