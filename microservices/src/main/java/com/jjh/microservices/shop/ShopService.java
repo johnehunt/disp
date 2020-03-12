@@ -20,7 +20,7 @@ public class ShopService {
 		// Will configure using shop-service.yml
 		System.setProperty("spring.config.name", "shop-service");
 		SpringApplication.run(ShopService.class, args);
-		System.out.println("Bookshop Service started");
+		System.out.println("Bookshop Service started - see http://localhost:3333");
 	}
 	
 	@LoadBalanced    // Make sure to create the load-balanced template

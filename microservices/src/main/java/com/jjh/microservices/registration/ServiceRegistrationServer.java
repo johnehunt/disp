@@ -19,7 +19,7 @@ public class ServiceRegistrationServer {
 		// Tell Boot to look for registration-server.yml
 		System.setProperty("spring.config.name", "registration-server");
 		SpringApplication.run(ServiceRegistrationServer.class, args);
-		System.out.println("Registration Server Started");
+		System.out.println("Registration Server Started - see http://localhost:1111");
 	}
 
 	@ConditionalOnMissingBean
